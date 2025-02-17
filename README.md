@@ -35,6 +35,22 @@ export default function About() {
 }
 ```
 
+## 📜 Nested Routing
+🔹 Each `.js` or `.tsx` file inside `app/blog/page.jsx` becomes a Nested route.
+🔹 Example: `app/blog/about.jsx` can be accessed at `/blog/about.jsx`.
+
+## 📜 Dynamic Routing
+🔹 Each `.js` or `.tsx` file inside `app/blog/[id]/page.js` becomes a Dynamic route.
+🔹 Example: `app/blog/[id]` can be accessed at `/blog/:id`.
+🔹
+
+```jsx
+export default function BlogPost({ params }) {
+  return <h1>Blog Post ID: {params.id}</h1>;
+}
+```
+
+
 ---
 
 ## ⚡ Pre-rendering Methods
